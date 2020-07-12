@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>멜로나 회원가입하기</title></head>
+<body>
+<h3>회원가입 </h3>
+<hr>
+<form>
+아이디 : <input type="text" value=""><br>
+패스워드 : <input type="password" value="" maxlength="4"><br>
+</form>
+<h5>개인정보 제공에 동의하십니까?</h5>
+<p id="p">동의하신다면 버튼을 눌러주세요.</p>
+<button onclick="f(event)">동의</button>
+<button onclick=>비동의</button>
+<script>
+function f(e) { // e는 현재 발생한 이벤트 객체
+var agree= "제공하신 정보는 20년간 보관 된 후 폐기됩니다."
+	var text = 
+    "type: " + e.type + "<br>" 
+			+ "target: " + e.target + "<br>"
+			+ "currentTarget: " + e.currentTarget + "<br>"
+			+ "defaultPrevented: " + e.defaultPrevented;
+     
+			
+	var p = document.getElementById("p");		
+    document.write(agree);
+	p.innerHTML = text; // 이벤트 객체의 프로퍼티 출력
+    
+}
+</script>
+</body>
+</html>

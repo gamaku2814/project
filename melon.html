@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>project_1.html</title>
+</head>
+<body>
+    <table border="0" align="center">
+        <thead>
+            <tr>
+                <td>
+                    <img id ="img" src="res/1.png" alt="res01.png" width="200px"onmouseover="startTimer(5000)"
+                   onmouseout="cancelTimer()"> 
+                </td>
+                <td colspan="2">
+                   <input type="text" name="text" style="width:400px;"/>
+                </td>
+                 <td> <img src="res/2.png" alt="res02.png" width="300px" />
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                 <td colspan="3"><h4><pre>  <a href="time.html">멜론차트</a>    최신      <a href="form.html">회원가입</a>       멜론DJ      멜론TV      <a href="newsong.html">신곡안내</a>      매거진      뮤직어워드      멜론Hi-Fi      <a href="makealbum.html">더보기</a></pre></h4></td>
+                 <td colspan="1"> <img src="res/6.png" alt="res06.png" width="100px" />
+                 </td>
+            </tr>    
+            <tr>
+                <td colspan="2" rowspan="2">
+                    <center><img src="res/3.png" alt="res03" width="800px" /></center>              
+                </td>
+                <td colspan="2"><center><img src="res/4.png" alt="res04" width="350px" /> </center>
+                </td>
+              
+            </tr>
+            <tr><td colspan="2"><center><img src="res/5.png" alt="res05" width="350px" /></td></center>
+            </tr>
+            <tr>
+   
+        <table border="0" align="left">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td colspan="1">
+                        <h3>인기있어요</h3>
+                    </td>
+                    <td colspan="2">지금 이슈가 되는 아티스트의 인기 컨텐츠 입니다.</td>
+           
+            <tbody>
+               
+            <tr>
+                <td rowspan="6"><img src="res/15.png" alt="res05" width="70px" /></tr>
+                <td><img src="res/8.png" alt="res05" width="200px" /> </td>
+                <td><img src="res/9.png" alt="res05" width="200px" /></td>
+                <td><img src="res/10.png" alt="res05" width="200px" /></td>
+              </tr>
+              <tr>
+                <td><img src="res/11.png" alt="res05" width="200px" /></td>
+                <td><img src="res/12.png" alt="res05" width="200px" /></td>
+                <td><img src="res/13.png" alt="res05" width="200px" /></td>
+               
+            </tr>
+           
+            </tbody>
+        </table>
+    </td>
+   
+</tr>
+<tr>
+    <td><img src="res/15.png" alt="res05" width="50px" /></td>
+    <td><img src="res/15.png" alt="res05" width="50px" /></td>
+    <td><img src="res/15.png" alt="res05" width="50px" /></td>
+    <td><img src="res/15.png" alt="res05" width="50px" /></td>
+    <td><img src="res/15.png" alt="res05" width="50px" /></td>
+    <td><img src="res/15.png" alt="res05" width="50px" /></td>
+    <td colspan="1">
+    <img src="res/14.png" alt="res14" width="280px" />
+    </td>
+</tr>
+        </tbody>
+        <tfoot>
+            <tr >
+                <td colspan="3">
+               
+                </td> 
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        var timerID=null;
+        function startTimer(time) {
+            // 타이머 시작
+            timerID = setTimeout("load('http://www.melon.com')", time);
+            
+            // 툴팁 메시지
+            document.getElementById("img").title = "타이머 작동 시작...";
+        }
+        function cancelTimer() {
+            if(timerID !=null) 
+                clearTimeout(timerID); // 타이머 중단
+        }
+        function load(url) {
+            window.location = url; // 현재 윈도우에  url 사이트 로드 
+        }
+        </script>
+</body>
+
+</html>
